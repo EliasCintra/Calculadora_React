@@ -16,7 +16,6 @@ button:hover{
     background-color: black;
     border-radius: 1em;
     padding: 1em;
-    
 }
 
 .orange{
@@ -34,5 +33,6 @@ button:hover{
     justify-content: flex-end;
     margin-right: 1em;
     font-size:3.5em;
+    overflow: hidden;
 }
 

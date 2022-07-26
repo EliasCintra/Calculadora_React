@@ -21,10 +21,6 @@ export default function Calculator() {
     setNum(0);
   }
 
-  function porcentage() {
-    setNum(num / 100);
-  }
-
   function changeSign() {
     if (num > 0) {
       setNum(-num);
@@ -63,8 +59,8 @@ export default function Calculator() {
           <Box m={2} />
           <h1 className="result">{num}</h1>
           <button onClick={clear}>AC</button>
-          <button onClick={changeSign}>+/-</button>
-          <button onClick={porcentage}>%</button>
+          <button style={{ visibility: "hidden" }}>.</button>
+          <button style={{ visibility: "hidden" }}>.</button>
           <button className="orange" onClick={operatorHandler} value="/">
             /
           </button>
@@ -110,9 +106,8 @@ export default function Calculator() {
           <button className="gray" onClick={inputNum} value={"."}>
             ,
           </button>
-          <button className="gray" style={{ visibility: "hidden" }}>
-            ,
-          </button>
+          <button className="gray" onClick={changeSign}>+/-</button>
+        
           <button className="orange" onClick={calculate}>
             =
           </button>
