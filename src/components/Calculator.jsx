@@ -73,7 +73,7 @@ export default function Calculator() {
           <button className="gray" onClick={inputNum} value={9}>
             9
           </button>
-          <button className="orange" onClick={operatorHandler} value="X">
+          <button className="orange" onClick={operatorHandler} value="x">
             X
           </button>
           <button className="gray" onClick={inputNum} value={4}>
